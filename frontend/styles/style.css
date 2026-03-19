@@ -1,0 +1,75 @@
+/* Overall setups */
+:root {
+    --accent-color: royalblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* 
+ * Header 
+ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8em 1.5em;
+}
+
+header .site-logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+header .header-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5em;
+}
+
+
+
+
+
+/*
+ * contents
+ */
+.contents {
+    flex: 1;
+}
+
+
+
+
+
+/*
+ * footer
+ */
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    font-weight: 900;
+}
