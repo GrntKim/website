@@ -17,6 +17,16 @@ body {
     margin: 0;
 }
 
+body.no-fouc {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body {
+    opacity: 1;
+    visibility: visible;
+}
+
 a {
     text-decoration: none;
     color: white;
