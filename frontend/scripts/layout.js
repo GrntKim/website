@@ -12,4 +12,18 @@ Promise.all([
         })
 ]).then(() => {
     document.body.classList.remove('no-fouc');
+
+    var currentPath = window.location.pathname.split('/').pop();
+    if(currentPath === '') {
+        currentPath = 'index.html';
+    }
+
+    const navLinks = document.querySelectorAll('.header-links a');
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+
+        if (href === currentPath || (currentPath === 'index.html' && href === './')) {
+            link.classList.add('active');
+        }
+    })
 });

@@ -59,6 +59,12 @@ header a:hover {
     color: rgba(255, 255, 255, 0.7);
 }
 
+header .header-links a.active {
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 6px; 
+}
+
 /*
  * contents
  */
